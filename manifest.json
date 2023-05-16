@@ -1,18 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "Navigation Extension",
+  "name": "File Content Fetcher",
   "version": "1.0",
-  "description": "A Chrome extension with a navigation bar.",
-  "permissions": ["tabs"],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardWrite"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon.png",
-      "128": "icon.png"
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
     }
   },
-  "icons": {
-    "16": "icon.png",
-    "128": "icon.png"
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   }
 }
