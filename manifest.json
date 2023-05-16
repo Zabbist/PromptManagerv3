@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Navigation Extension",
+  "version": "1.0",
+  "description": "A Chrome extension with a navigation bar.",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  }
+}
